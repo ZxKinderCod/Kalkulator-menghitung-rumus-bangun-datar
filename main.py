@@ -7,11 +7,14 @@ def options():
     pilihan = input("Masukkan pilihan: ")
     
     if pilihan == "1":
-        from pemilihan import main
-        main()
+        from pemilihan import penjurusan_persegi
+        penjurusan_persegi()
     elif pilihan == "2":
-        from pemilihan import lingkaran
-        lingkaran()
+        from pemilihan import penjurusan_lingkaran
+        penjurusan_lingkaran()
+    elif pilihan == "3":
+        from pemilihan import penjurusan_segitiga
+        penjurusan_segitiga()
 
 def main():
     while True:

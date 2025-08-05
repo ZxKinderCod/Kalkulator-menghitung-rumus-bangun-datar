@@ -5,10 +5,12 @@ def penjurusan_persegi():
   pilihan = input ("Pilihlah salah satu : ")
   
   if pilihan == "1":
-    from persegi import start
-    start()
+    from persegi import luas
+    luas()
   elif pilihan == "2":
-    pass
+    from persegi import keliling
+    keliling()
+    
 def main():
   while True:
     penjurusan_persegi()
@@ -24,10 +26,12 @@ def penjurusan_lingkaran():
   pilihan = input ("Pilihlah salah satu : ")
   
   if pilihan == "1":
-    from lingkaran import start
-    start()
+    from lingkaran import luas
+    luas()
   elif pilihan == "2":
-    pass
+    from lingkaran import keliling
+    keliling()
+    
 def lingkaran():
   while True:
     penjurusan_lingkaran()
@@ -35,5 +39,25 @@ def lingkaran():
 if __name__ == "__main__":
   lingkaran()
   
+
+
+#SEGITIGA
+def penjurusan_segitiga():
+  print ("1. Luas segitiga")
+  print ("2. Keliling segitiga")
+  pilihan = input ("Pilihlah salah satu : ")
   
+  if pilihan == "1":
+    from segitiga import luas
+    luas()
+  elif pilihan == "2":
+    from segitiga import keliling
+    keliling()
+    
+def segitiga():
+  while True:
+    penjurusan_segitiga()
+        
+if __name__ == "__main__":
+  segitiga()
   
